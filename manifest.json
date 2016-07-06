@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Country Switcher",
+	"version": "1.0",
+	"description": "Searches text to replace a country with another random country.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
