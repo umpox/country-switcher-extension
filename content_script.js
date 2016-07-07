@@ -32,7 +32,7 @@ function handleText(textNode) {
  
     // Deal with the easy case
     v = v.replace(/\bEngland/g, function(match, p1, p2, offset, string) {
-        return "America";
+        return generateCountry();
     });
  
     textNode.nodeValue = v;
