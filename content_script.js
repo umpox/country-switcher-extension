@@ -40,6 +40,9 @@ function handleText(textNode) {
 
 
 
-function randCountry () {
+function generateCountry () {
+    var numCountries = countries.length;
+    var randCountry = countries[ Math.floor( Math.random() * (numCountries + 1) ) ];
 
+    return randCountry;
 }
