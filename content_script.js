@@ -41,10 +41,6 @@ function handleText(textNode) {
     textNode.nodeValue = v;
 }
 
-function replaceCountry() {
-
-}
-
 function generateCountry () {
     var randCountry = countries[ Math.floor( Math.random() * (numCountries + 1) ) ];
 
