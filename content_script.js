@@ -30,10 +30,12 @@ function walk(node) {
 function handleText(textNode) {
     var v = textNode.nodeValue;
 
-
     for (var i=0; i < numCountries; i++) {
         if ( v.match ( countries[i] ) ) {
+            //Create new regex to store found country
             var newRegex = new RegExp(countries[i], "g");
+
+            //Replace found country with randomly generated country
             v = v.replace(newRegex, generateCountry());
         }
     } 
@@ -42,6 +44,7 @@ function handleText(textNode) {
 }
 
 function generateCountry () {
+    //Generates a random number to apply to the country array
     var randCountry = countries[ Math.floor( Math.random() * (numCountries + 1) ) ];
 
     return randCountry;
