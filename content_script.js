@@ -35,9 +35,10 @@ function handleText(textNode) {
         if ( v.match ( countries[i] ) ) {
             var newRegex = new RegExp(countries[i], "g");
             v = v.replace(newRegex, generateCountry());
-            textNode.nodeValue = v;
         }
     } 
+    
+    textNode.nodeValue = v;
 }
 
 function replaceCountry() {
