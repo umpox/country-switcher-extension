@@ -50,4 +50,5 @@ function generateCountry () {
     return randCountry;
 }
 
+//Begin parsing text and replacing countries
 walk(document.body);
