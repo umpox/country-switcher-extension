@@ -4,7 +4,7 @@ var countries = [
 
 var numCountries = countries.length;
 //Variable will store the percentage chance of program running on a page
-var percentChance = 10;
+var percentChance = 20;
 //Generate random number to calculate percentage chance
 var randNum = Math.floor( Math.random() * 100);
  
