@@ -31,7 +31,7 @@ function handleText(textNode) {
     var v = textNode.nodeValue;
     var randNum;
     //Variable will store the percentage chance of program running on a page
-    var percentChance = 20;
+    var percentChance = 10;
 
     for (var i=0; i < numCountries; i++) {
         //Generate random number to calculate percentage chance
