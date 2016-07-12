@@ -57,6 +57,4 @@ function generateCountry () {
 //Begin parsing text and replacing countries
 if ( randNum <= percentChance ) {
     walk(document.body);
-} else {
-    alert('not running');
 }
