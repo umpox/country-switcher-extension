@@ -3,6 +3,10 @@ var countries = [
 ];
 
 var numCountries = countries.length;
+//Variable will store the percentage chance of program running on a page
+var percentChance = 10;
+//Generate random number to calculate percentage chance
+var randNum = Math.floor( Math.random() * 100);
  
 function walk(node) {
     var child, next;
@@ -51,4 +55,5 @@ function generateCountry () {
 }
 
 //Begin parsing text and replacing countries
+
 walk(document.body);
