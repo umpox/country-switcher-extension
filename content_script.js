@@ -35,7 +35,8 @@ function handleText(textNode) {
     var v = textNode.nodeValue;
 
     for (var i=0; i < numCountries; i++) {
-        if ( v.match ( countries[i] ) ) {
+        //If text matches a country and percentage chance of running is met
+        if ( v.match ( countries[i] ) && randNum <= percentChance ) {
             //Create new regex to store found country
             var newRegex = new RegExp(countries[i], "g");
 
@@ -55,6 +56,4 @@ function generateCountry () {
 }
 
 //Begin parsing text and replacing countries
-if ( randNum <= percentChance ) {
-    walk(document.body);
-}
+walk(document.body);
