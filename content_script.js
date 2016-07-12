@@ -3,10 +3,6 @@ var countries = [
 ];
 
 var numCountries = countries.length;
-//Variable will store the percentage chance of program running on a page
-var percentChance = 20;
-//Generate random number to calculate percentage chance
-var randNum = Math.floor( Math.random() * 100);
  
 function walk(node) {
     var child, next;
@@ -33,8 +29,14 @@ function walk(node) {
  
 function handleText(textNode) {
     var v = textNode.nodeValue;
+    var randNum;
+    //Variable will store the percentage chance of program running on a page
+    var percentChance = 20;
 
     for (var i=0; i < numCountries; i++) {
+        //Generate random number to calculate percentage chance
+        randNum = Math.floor( Math.random() * 100);
+
         //If text matches a country and percentage chance of running is met
         if ( v.match ( countries[i] ) && randNum <= percentChance ) {
             //Create new regex to store found country
